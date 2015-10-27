@@ -59,7 +59,7 @@ public class Uts_progjar {
                 }
                 else msg = "result:"+msg;
                 
-                if(tr.p == 1){
+                if(tr.phase() == 1){
                     String hashPart = tr.returnHash();
                     int length = Character.getNumericValue(hashPart.charAt(15));
                     msg = "Hash:"+hashPart.substring(18, 18+length)+"\n\r\n";
